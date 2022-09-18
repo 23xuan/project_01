@@ -1,0 +1,453 @@
+.xtx_entry {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.swiper {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+.swiper .bo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700%;
+}
+.swiper .bo li {
+    float: left;
+}
+.swiper .bo li a img {
+    width: 1240px;
+    height: 500px;
+}
+.prev ,
+.next {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    background: rgba(0,0,0,.2) url(../images/sprites.png) no-repeat;
+}
+.prev  {
+    left: 260px;
+    background-position: 14px -60px;
+}
+.next  {
+    right: 10px;
+    background-position: -22px -60px;
+}
+.pagination {
+    position: absolute;    
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+}
+.pagination li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.43);
+    margin: 0 8px;
+    border-radius: 50%;
+     /* 鼠标变成小手 */
+    cursor: pointer;
+}
+.pagination li.active {
+    background-color: #fff;
+}
+.xtx_entry .w {
+    position: relative;
+}
+.category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background: rgba(0,0,0,.8);
+}
+.category ul li {
+    position: relative;
+    height: 50px;
+    padding-left: 35px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+    transition: all .4s;
+}
+.category ul li:hover {
+    background-color: #27ba9b;
+    padding-left: 40px;
+}
+.category ul li::after {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    content: '';
+    width: 6px;
+    height: 12px;
+    background: url(../images/sprites.png) no-repeat -80px -110px;
+    transition: all .4s;
+}
+.category ul li:hover::after {
+    transform: rotate(360deg);
+}
+.category ul li a {
+    font-size: 14px;
+    color: #fff; 
+    margin-right: 3px;
+}
+.category ul li a:first-child {
+    margin-left: 15px;
+}
+.xtx-new-goods {
+    height: 520px;
+}   
+.goods_hd {
+    overflow: hidden;
+    height: 115px;
+}
+.goods_hd h3 {
+    float: left;
+    width: 305px;
+    line-height: 115px;
+    font-size: 29px;
+    color: #333;
+    font-weight: 400;
+}
+.goods_hd h3 span {
+    font-size: 16px;
+    color: #999;
+    margin-left: 30px;
+}
+.goods_hd a {
+    margin: 45px 0 ;
+}
+.all {
+    float: right;
+    font-size: 16px;
+    color: #999;
+}
+.goods-list ul {
+    display: flex;
+    justify-content: space-between;
+    height: 405px;
+}
+.goods-list ul li {
+    position: relative;
+    float: left;
+}
+.goods-list .lv li {
+    background-color: #f0f9f4;
+}
+.goods-list li:hover {
+    top: -5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.goods-list ul li a {
+    display: block;
+    width: 305px;
+    height: 405px;
+}
+.goods-list ul li a img {
+    width: 305px;
+    height: 305px;
+}
+.goods-list ul li a h4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+.goods-list ul li a p {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods-list ul li a p span {
+    font-size: 22px;
+}
+.goods-list li i {
+    position: absolute;
+    top: 18px; 
+    left: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    color: #27ba9b;
+    border-radius: 3px;
+    /* 行高越小字越近 */
+    text-align: center;
+    line-height: 18px;
+    font-size: 18px;
+    padding-top: 7px;
+}
+.renqi .goods-list ul li  {
+    height: 460px;
+}
+.renqi .goods-list ul li a h4 {
+    margin-top: 40px;
+    color: #333;
+    font-size: 21px;
+}
+.renqi .goods-list ul li a p {
+    color: #999;
+    font-size: 16px;
+}
+.xtx-hot-remen {
+    margin-top: 55px;
+    height: 466px;
+    background-color: #f5f5f5;
+}
+.xtx-hot-remen .w .goods_hd ul {
+    float: right;
+}
+.xtx-hot-remen .w .goods_hd ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 78px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background-color: #e2e2e2;
+    cursor: pointer;
+}
+.xtx-hot-remen .w .goods_hd ul li:last-child {
+    margin-right: 0;
+}
+.xtx-hot-remen .goods_hd .arrow li:hover {
+    background-color: #27ba9b;
+}
+.remen-list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.remen-list ul li a img {
+    width: 245px;
+    height: 306px;
+}
+.xian {
+    height: 706px;
+}
+.xian_hd {
+    height: 96px;
+}
+.xian_hd h3 {
+    float: left;
+    font-size: 29px;
+    color: #333;
+    line-height: 96px;
+ }
+.xian_hd ul{
+    float: left;
+    line-height: 96px;
+    margin-left: 670px;
+}
+.xian_hd ul li {
+    float: left;
+    margin: 0 5px;
+    font-size: 16px;
+    color: #fefbfc;
+}
+.xian_hd ul li a {
+    padding: 5px;
+}
+.xian_hd ul li a:hover {
+    background-color: #27ba9b;
+    color: #fff;
+}
+.xian_hd .all {
+    line-height: 96px;
+}
+.xian_bd {
+    height: 610px;
+}
+.xian_bd .left {
+    float: left;
+    width: 240px;
+}
+.xian_bd .left a img {
+    width: 240px;
+    height: 610px;
+}
+.xian_bd .right {
+    overflow: hidden;
+    float: right;
+    width: 1000px;
+}
+.xian_bd .right ul li  {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: block;
+    width: 242px;
+    height: 304px;
+    border: 1px solid transparent;
+    margin: 0 0 3px 8px;
+}
+.xian_bd .right ul li:hover {
+    border: 1px solid #27ba9b;
+}
+.xian_bd .right ul li a img {
+    display: block;
+    width: 184px;
+    height: 184px;
+    margin: 18px auto 12px;
+}
+.xian_bd .right ul li h4 {
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 30px;
+    height: 50px;
+}
+.xian_bd .right ul li p {
+    font-size: 17.24px;
+    color: #9a2e1f;
+}
+.xian_bd .right ul li span {
+    font-size: 22px;
+}
+.baby {
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    width: 100%;
+    height: 84px;
+    text-align: center;
+    color: #fff;
+    transition: .4s;
+    background-color: #27ba9b;
+}
+.xian_bd .right ul li:hover .baby {
+    bottom: 0;
+}
+.baby h3 {
+    width: 125px;
+    height: 35px;
+    border-bottom: 2px solid #a9dbcc;
+    margin: 12px auto 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.baby a {
+    color: #fff;
+}
+.zti {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    margin-top: 52px;
+    background-color: #f5f5f5;
+}
+.zti_hd {
+    height: 115px;
+}
+.zti_hd h3 {
+    float: left;
+    width: 116px;
+    font-size: 29px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 115px;
+}
+.zti_hd .all {
+    float: right;
+    display: block;
+    margin-top: 70px;
+}
+.zti_bd {
+    height: 395px;
+}
+.zti_bd ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.zti_bd ul li {
+    width: 405px;
+    height: 355px;
+}
+.zti_bd ul li .pic {
+    position: relative;
+    width: 405px;
+    height: 285px;
+}
+.zti_bd ul li .pic img {
+    width: 405px;
+    height: 285px;
+}
+.zti_bd ul li .pic .info {
+    position: absolute;
+    width: 390px;
+    bottom: 0;
+    left: 15px;
+}
+.zti_bd ul li .pic .info h4 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+}
+.zti_bd ul li .pic .info p {
+    font-size: 16px;
+    color: #999;
+    text-align: left;
+    margin: 10px 0 ;
+}
+.zti_bd ul li .pic .info span {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    width: 80px;
+    height: 25px;
+    background-color: #fff;
+    font-size: 17px;
+    color: #9a2e1f;
+    text-align: center;
+}
+.news-b {
+    width: 405px;
+    height: 70px;
+    background-color: #fff;
+}
+.news-b span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 70px;
+}
+.news-b span:nth-child(1) {
+    margin-left: 20px;
+}
+.news-b span:nth-child(2) {
+    margin-left: 24px;
+}
+.news-b span:nth-child(3) {
+    float: right;
+    margin-right: 15px;
+}
+.news-b span::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url(../images/sprites.png) no-repeat;
+}
+.news-b span:nth-child(1)::before {
+    background-position: -120px -110px;
+}
+.news-b span:nth-child(2)::before {
+   background-position: -160px -110px;
+}
+.news-b span:nth-child(3)::before {
+   background-position: -200px -110px;
+}

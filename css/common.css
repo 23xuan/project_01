@@ -1,0 +1,334 @@
+.w {
+    width: 1240px;
+    margin: 0 auto;
+}
+.dingbu {
+    display: none;
+    position: fixed;
+    right: 80px;
+    top: 450px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70% 70% 5px 5px ;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #27ba9b;
+}
+.dingbu:hover {
+    color: #27ba9b;
+    border: 1px solid rgba(75, 72, 72, 0.126);
+    background-color: #fff;
+    cursor: pointer;
+}
+.xtx_shortcut {
+    height: 50px;
+    line-height: 50px;
+    background-color: #333333;
+}
+.xtx_shortcut ul {
+    float: right;
+}
+.xtx_shortcut ul li {
+    float: left;
+    font-size: 14px;
+}
+.xtx_shortcut ul li a {
+    color: #dcdcdc;
+}
+.sep {
+    margin: 0 15px;
+    color: #585858;
+}
+.xtx_shortcut ul li a:hover {
+    color: #fff;
+}
+.xtx_shortcut ul li a i {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 8px 0 0;
+    width: 12px;
+    height: 17px;
+    background: url(../images/sprites.png) no-repeat -160px -70px;;
+}
+.xtx_main_nav {
+    height: 130px;
+    background-color: #fff;
+}
+.xtx_main_nav .logo {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 207px;
+    height: 70px;
+}
+.xtx_main_nav .logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 207px 70px;
+}   
+.xtx_main_nav .nav {
+    float: left;
+    width: 710px;
+    height: 130px;
+}
+.xtx_main_nav .nav ul li {
+    float: left;
+    margin: 50px 20px 0;
+}
+.xtx_main_nav .nav ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+}
+.xtx_main_nav .nav ul li a:hover {
+    color: #8cdaca;
+    border-bottom: 1px solid #8cdaca;
+}
+.search {
+    float: right;
+    position: relative;
+    margin-top: 50px;
+}
+.search input {
+    padding-left: 30px;
+    width: 172px;
+    height: 38px;
+    border-bottom: 2px solid #e7e7e7;
+}.search input::placeholder {
+    color: #ccc;  
+}
+.search::before {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprites.png) no-repeat -80px -70px;
+}
+.search a {
+    position: relative;
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 10px 12px 0;
+    background: url(../images/sprites.png) no-repeat -119px -70px;
+}
+.search a span {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    padding: 0 7px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #e26237;
+    border-radius: 7px;
+}
+.footer_t {
+    height: 302px;
+}
+.footer_t .w {
+    display: flex;
+    justify-content: space-around;
+}
+.footer_t dl {
+    margin: 78px 60px 0;
+}
+.footer_t dl dt {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.footer_t  dd {
+    float: left;
+    width: 92px;
+    height: 92px;
+    background-color:#fff;
+    border: 1px solid #eeeeee;
+}
+.footer_t dl:nth-of-type(-n+3) dd:nth-of-type(1) {
+    margin-right: 7px;
+}
+.footer_t dl:nth-of-type(-n+4) dt {
+    font-size: 16px;
+    color: #a1a1a1;
+}
+.footer_t dl:nth-of-type(-n+2) dd {
+    font-size: 14px;
+    color: #c9c9c9;
+}
+.zaixian dd a ,
+.us dd a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.zaixian dd a p ,
+.us dd a p {
+    font-size: 14px;
+    color: #999;
+}
+.zaixian dd a::before ,
+.us dd a::before{
+    content: '';
+    display: inline-block;
+    width: 29px;
+    height: 28px;
+    margin-top: 22px;
+    margin-left: 30px;
+    background: url(../images/sprites.png) no-repeat;
+    transition: all .4s;
+}
+p {
+    text-align: center;
+}
+.zaixian dd:nth-of-type(1) a::before {
+    background-position: -250px -69px;
+}
+.zaixian dd:nth-of-type(1) a:hover:before {
+    background-position: -205px -69px;
+}
+.zaixian dd:nth-of-type(2) a::before {
+    background-position: -350px -70px;
+}
+.zaixian dd:nth-of-type(2) a:hover:before {
+    background-position: -300px -70px;
+}
+.us dd:nth-of-type(1) a::before {
+    background-position: -247px -14px;
+    width: 37px;
+    height: 29px;
+}
+.us dd:nth-of-type(1) a:hover::before {
+    background-position: -204px -14px;
+}
+.us dd:nth-of-type(2) a::before {
+    width: 37px;
+    height: 29px;
+    background-position: -348px -14px;
+}
+.us dd:nth-of-type(2) a:hover::before {
+    background-position: -300px -14px;
+}
+.footer_t .w .xiazai dd {
+    width: 116px;
+    height: 116px;
+}
+.footer_t .w .xiazai dt {
+    margin-bottom: 25px;
+}
+.footer_t .w .xiazai dd img {
+    width: 114px;
+    height: 114px;
+}
+.footer_t .w .xiazai .ma {
+    float: left;
+    width: 85px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.footer_t .w .xiazai .ma p {
+    font-size: 14px;
+    color:#999999;
+}
+.footer_t .w .xiazai .ma p:nth-of-type(1) {
+    text-align: left;
+    margin-bottom: 3px;
+}
+.footer_t .w .xiazai .ma a {
+    display: block;
+    margin-top: 18px;
+    width: 100px;
+    height: 32px;
+    background-color: #27ba9b;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+}
+.fuwu .rexian {
+    width: 100%;
+    height: 100%;
+}
+.fuwu .phone {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #666;
+}
+.date {
+    font-size: 15px;
+    color: #999999;
+}
+footer {
+    position: relative;
+}
+.footer_d {
+    background-color: #333333;
+    width: 100%;
+    height: 345px;
+}
+.footer_d .h {
+    display: flex;
+    justify-content: space-around;
+    width: 1400px;
+    height: 175px;
+    margin: 0 auto;
+    border-bottom: 1px solid #434343;
+}
+.footer_d .h a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 175px;
+    font-size: 27.5px;
+    color: #fff;
+}
+.footer_d .h a::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/sprites.png) no-repeat;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 18px;
+}
+.footer_d .h a:nth-child(2):before {
+    background-position: -65px 0;
+}
+.footer_d .h a:nth-child(3):before {
+    background-position: -130px 0;
+}
+.f ul {
+    margin-top: 42px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.f ul li {
+    display: inline-block;
+    height: 100%;
+    margin: 0 7px;
+}
+.f ul li a {
+    width: 100%;
+    height: 100%;
+    color: #999999;
+    font-size: 14px;
+}
+.f p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 12px;
+}
